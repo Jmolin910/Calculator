@@ -28,6 +28,9 @@ public class Calculator {
                         System.out.println("The product is " + (num1 * num2));
 
                 if (operator.equals("divide"))
-                        System.out.println("The dividend is " + (num1 / num2));
+                        if (num2 == 0.0){
+                                System.out.println("Error: Divide by Zero");
+                        }
+                        else System.out.println("The dividend is " + (num1 / num2));
         }
 }
