@@ -10,10 +10,10 @@ public class Calculator {
                 String operator = "";
 
                 System.out.print("First number? ");
-                int num1 = numScanner.nextInt();
+                double num1 = numScanner.nextDouble();
         
                 System.out.print("Second number? ");
-                int num2 = numScanner.nextInt();
+                double num2 = numScanner.nextDouble();
         
                 System.out.println("Would you like to add, subtract, multiply, or divide these numbers?");
                 operator = opScanner.nextLine();
@@ -25,9 +25,9 @@ public class Calculator {
                         System.out.println("The difference is " + (num1 - num2));
                 
                 if (operator.equals("multiply"))
-                        System.out.println("The difference is " + (num1 * num2));
+                        System.out.println("The product is " + (num1 * num2));
 
                 if (operator.equals("divide"))
-                        System.out.println("The difference is " + (num1 / num2));
+                        System.out.println("The dividend is " + (num1 / num2));
         }
 }
