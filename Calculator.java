@@ -15,7 +15,7 @@ public class Calculator {
                 System.out.print("Second number? ");
                 int num2 = numScanner.nextInt();
         
-                System.out.println("Would you like to add or subtract these numbers?");
+                System.out.println("Would you like to add, subtract, multiply, or divide these numbers?");
                 operator = opScanner.nextLine();
 
                 if (operator.equals("add"))
@@ -23,5 +23,11 @@ public class Calculator {
                 
                 if (operator.equals("subtract"))
                         System.out.println("The difference is " + (num1 - num2));
+                
+                if (operator.equals("multiply"))
+                        System.out.println("The difference is " + (num1 * num2));
+
+                if (operator.equals("divide"))
+                        System.out.println("The difference is " + (num1 / num2));
         }
 }
