@@ -4,17 +4,24 @@ public class Calculator {
 
         public static void main(String[] args) {
                 
-                Scanner scanner = new Scanner(System.in);
-                
+                Scanner numScanner = new Scanner(System.in);
+                Scanner opScanner = new Scanner(System.in);
+
+                String operator = "";
+
                 System.out.print("First number? ");
-                int userInput1 = scanner.nextInt();
+                int num1 = numScanner.nextInt();
         
                 System.out.print("Second number? ");
-                int userInput2 = scanner.nextInt();
+                int num2 = numScanner.nextInt();
         
-                int addition = userInput1 + userInput2;
-        
-                System.out.println("The sum is " + addition);
+                System.out.println("Would you like to add or subtract these numbers?");
+                operator = opScanner.nextLine();
 
+                if (operator.equals("add"))
+                        System.out.println("The sum is " + (num1 + num2));
+                
+                if (operator.equals("subtract"))
+                        System.out.println("The difference is " + (num1 - num2));
         }
 }
